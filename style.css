@@ -1,0 +1,190 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --black : #1E2338;
+    --page-background: #f9fbfc;
+}
+
+body {
+    background: var(--page-background);
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+#content {
+    background: #1D539E;
+    height: 50vh;
+    padding-top: 100px;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#welcome-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#welcome-section p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 65px;
+    max-width: 553px;
+    padding: 0px 25px;
+    text-align: center;
+}
+
+#promo-section {
+    display: flex;
+    justify-content: center;
+}
+
+#promo-section ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    list-style: none;
+    list-style-position: inside;
+}
+
+.promo-card {
+    display: flex;
+    flex-direction: column;
+    width: 355px;
+    height: 470px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.promo-card header {
+    padding: 30px 30px 0px;
+}
+
+.promo-card header h2 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: var(--black);
+}
+
+.promo-card header span {
+    color: var(--black);
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.promo-card main {
+    padding: 10px 30px;
+}
+
+.promo-card main p {
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.promo-card main hr {
+    width: 100%;
+    color: #EEEEEE;
+    margin-bottom: 20px;
+}
+
+.promo-card ul {
+    display: flex;
+    flex-direction: column;
+    list-style: url(assets/check.svg);
+    list-style-position: inside;
+    color: var(--gray);
+    gap: 17px;
+}
+
+.promo-card footer {
+    margin: auto auto 0px;
+    width: 100%;
+    padding: 0px 30px 30px;
+}
+
+.promo-card footer a {
+    text-decoration: none;
+}
+
+#button {
+    width: 100%;
+    height: 49px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+    background: var(--page-background);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--blue);
+    line-height: 0px;
+    transition: all 0.2s;
+}
+
+#button:hover {
+    background: var(--blue);
+    color: #FFFFFF;
+}
+
+#popular {
+    height: 490px;
+    position: relative;
+    top: -10px;
+}
+
+#popular header {
+    padding: 0px
+}
+
+#best-promo {
+    padding: 30px;
+    background: var(--yellow);
+    border-radius: 8px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#best-promo h2 {
+    margin: 0px;
+    color: var(--blue);
+}
+
+#popular-tag {
+    height: auto;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600;
+    background: var(--blue);
+    width: 94px;
+    height: 32px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popular .price {
+    padding: 0px 30px;
+}
+
+#popular footer {
+    padding-bottom: 43px;
+}
