@@ -16,11 +16,15 @@ body {
     background: var(--page-background);
     font-family: 'Open Sans', sans-serif;
     color: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
 }
 
-#content {
-    background: #1D539E;
+#blue-header {
     height: 50vh;
+    background: #1D539E;
+    position: relative;
+    z-index: 0;
     padding-top: 100px;
 }
 
@@ -43,6 +47,15 @@ body {
     max-width: 553px;
     padding: 0px 25px;
     text-align: center;
+}
+
+#content {
+    width: 100vw;
+    height: auto;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 1;
+    bottom: 10vh;
 }
 
 #promo-section {
@@ -187,4 +200,60 @@ body {
 
 #popular footer {
     padding-bottom: 43px;
+}
+
+@media screen and (max-width: 1168px) {
+    #blue-header {
+        height: 30vh;
+    }
+    
+    #content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        bottom: 30vh;
+    }
+
+    #welcome-section h1 {
+        text-align: center;
+    }
+
+    #welcome-section p {
+        margin-bottom: 65px;
+    }
+
+    #promo-section ol {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    #content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+    }
+
+    #welcome-section {
+        padding: 0px 20px 0px;
+    }
+
+    #welcome-section h1 {
+        text-align: center;
+    }
+
+    #welcome-section p {
+        margin-bottom: 45px;
+    }
+
+    #promo-section ol {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 30px;
+    }
 }
