@@ -21,12 +21,18 @@ body {
 }
 
 #blue-header {
-    width: 100%;
-    height: 50%;
+    width: 100vw;
+    height: 50vh;
     background: #1D539E;
-    position: relative;
-    z-index: 0;
+}
+
+#content {
+    width: 100vw;
+    height: auto;
     padding-top: 100px;
+    padding-bottom: 50px;
+    position: relative;
+    top: -50vh;
 }
 
 #welcome-section {
@@ -48,15 +54,6 @@ body {
     max-width: 553px;
     padding: 0px 25px;
     text-align: center;
-}
-
-#content {
-    width: 100%;
-    height: auto;
-    padding-bottom: 50px;
-    position: relative;
-    z-index: 1;
-    top: -10vh;
 }
 
 #promo-section {
@@ -203,17 +200,11 @@ body {
     padding-bottom: 43px;
 }
 
-@media screen and (max-width: 1280px) {
-    #blue-header {
-        height: 40%;
-    }
-    
+@media screen and (max-width: 1068px) {
     #content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        top: -10%;
-        height: auto;
     }
 
     #welcome-section h1 {
@@ -229,11 +220,6 @@ body {
 }
 
 @media screen and (max-width: 668px) {
-    #blue-header {
-        height: 50% !important;
-        padding-top: 60px;
-    }
-    
     #welcome-section {
         padding: 0px 20px 0px;
     }
@@ -243,16 +229,23 @@ body {
         flex-direction: column;
         align-items: center;
         height: auto;
-        top: -5%;
+        padding-top: 70px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    #content {
+        padding-top: 50px;
+    }
+
+    #welcome-section {
+        margin-bottom: 55px;
     }
 }
 
 @media screen and (max-width: 368px) {
-    #blue-header {
-        height: 50% !important;
-    }
-    
     #welcome-section {
         padding: 0px 10px 0px;
+        margin-bottom: 55px;
     }
 }
