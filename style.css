@@ -228,7 +228,7 @@ body {
     }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 668px) {
     #blue-header {
         height: 50% !important;
         padding-top: 60px;
