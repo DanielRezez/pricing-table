@@ -21,7 +21,8 @@ body {
 }
 
 #blue-header {
-    height: 50vh;
+    width: 100%;
+    height: 50%;
     background: #1D539E;
     position: relative;
     z-index: 0;
@@ -32,6 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 65px;
 }
 
 #welcome-section h1 {
@@ -43,19 +45,18 @@ body {
 #welcome-section p {
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 65px;
     max-width: 553px;
     padding: 0px 25px;
     text-align: center;
 }
 
 #content {
-    width: 100vw;
+    width: 100%;
     height: auto;
     padding-bottom: 50px;
     position: relative;
     z-index: 1;
-    bottom: 10vh;
+    top: -10vh;
 }
 
 #promo-section {
@@ -202,24 +203,21 @@ body {
     padding-bottom: 43px;
 }
 
-@media screen and (max-width: 1168px) {
+@media screen and (max-width: 1280px) {
     #blue-header {
-        height: 30vh;
+        height: 40%;
     }
     
     #content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        bottom: 30vh;
+        top: -10%;
+        height: auto;
     }
 
     #welcome-section h1 {
         text-align: center;
-    }
-
-    #welcome-section p {
-        margin-bottom: 65px;
     }
 
     #promo-section ol {
@@ -230,30 +228,31 @@ body {
     }
 }
 
-@media screen and (max-width: 968px) {
-    #content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 70px;
+@media screen and (max-width: 568px) {
+    #blue-header {
+        height: 50% !important;
+        padding-top: 60px;
     }
-
+    
     #welcome-section {
         padding: 0px 20px 0px;
     }
 
-    #welcome-section h1 {
-        text-align: center;
+    #content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        top: -5%;
     }
+}
 
-    #welcome-section p {
-        margin-bottom: 45px;
+@media screen and (max-width: 368px) {
+    #blue-header {
+        height: 50% !important;
     }
-
-    #promo-section ol {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        row-gap: 30px;
+    
+    #welcome-section {
+        padding: 0px 10px 0px;
     }
 }
