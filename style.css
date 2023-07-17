@@ -91,12 +91,6 @@ body {
     color: var(--black);
 }
 
-.promo-card header span {
-    color: var(--black);
-    font-weight: 700;
-    font-size: 36px;
-}
-
 .promo-card main {
     padding: 10px 30px;
 }
@@ -195,6 +189,32 @@ body {
 
 #popular .price {
     padding: 0px 30px;
+
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.real {
+    color: var(--black);
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.cent {
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.per-month {
+    color: var(--gray);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
 }
 
 #popular footer {
